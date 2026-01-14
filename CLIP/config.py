@@ -1,0 +1,33 @@
+# config = {
+    'vision': {
+        'image_size': 224,
+        'patch_size': 32,
+        'embedding_dim': 512,
+        'n_layers': 8,
+        'n_heads': 8,
+        'mlp_ratio': 4,
+        'output_dim': 512,
+        'dropout': 0.05,
+    },
+    'text': {
+        'vocab_size': 49408,
+        'max_seq_len': 77,
+        'embedding_dim': 512,
+        'n_layers': 8,
+        'n_heads': 8,
+        'mlp_ratio': 4,
+        'output_dim': 512,
+        'dropout': 0.05,
+    },
+    'training': {
+        'batch_size': 128,
+        'learning_rate': 5e-4,
+        'weight_decay': 0.2,
+        'epochs': 200,
+        'warmup_epochs': 5,
+        'temperature': 0.07,
+        'optimizer': 'AdamW',
+        'betas': (0.9, 0.98),
+        'eps': 1e-06,
+    },
+}
