@@ -1,3 +1,4 @@
+**I was messing around with it, implementation is same but i have tooked the original and tried to simplify it just so i can understand**
 # Point-MAE: Masked Autoencoders for Point Cloud Self-supervised Learning
 
 A clean, minimal PyTorch implementation of Point-MAE for self-supervised point cloud learning.
