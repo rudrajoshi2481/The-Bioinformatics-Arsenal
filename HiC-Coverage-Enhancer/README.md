@@ -204,25 +204,7 @@ The model is evaluated using:
 
 For systems with limited memory, use smaller `--tile-size` and `--batch-size` values.
 
-## Citation
-
-If you use this tool in your research, please cite:
-
-```bibtex
-@software{hic_coverage_enhancer,
-  title={Hi-C Coverage Enhancer},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/yourusername/hic-coverage-enhancer}
-}
-```
 
 ## License
 
 MIT License - see LICENSE file for details.
-
-## Acknowledgments
-
-- Built with PyTorch
-- Hi-C data handling via cooler
-- Inspired by HiCPlus and other Hi-C enhancement methods
