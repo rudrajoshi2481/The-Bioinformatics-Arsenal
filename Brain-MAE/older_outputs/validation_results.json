@@ -1,0 +1,84 @@
+{
+  "passed": true,
+  "file_integrity": [
+    {
+      "subject": "sub-001",
+      "task": "tunnel",
+      "passed": true,
+      "checks": {
+        "bold_exists": true,
+        "bold_readable": true,
+        "events_exists": true,
+        "json_exists": true
+      }
+    }
+  ],
+  "data_quality": [
+    {
+      "subject": "sub-001",
+      "task": "tunnel",
+      "passed": true,
+      "checks": {
+        "shape_match": true,
+        "no_nan": true,
+        "no_inf": true,
+        "valid_range": true,
+        "temporal_variance": true,
+        "snr_reasonable": true,
+        "low_dead_voxels": true
+      },
+      "stats": {
+        "shape": [
+          64,
+          64,
+          27,
+          1040
+        ],
+        "nan_count": 0,
+        "inf_count": 0,
+        "min": 0.0,
+        "max": 2096.0,
+        "mean": 224.22284453737092,
+        "std": 298.98815540764383,
+        "temporal_std": 12.65059721670002,
+        "snr_estimate": 0.7584082841416834,
+        "dead_voxel_ratio": 0.015625
+      }
+    }
+  ],
+  "patch_compatibility": {
+    "passed": true,
+    "checks": {
+      "X_divisible": true,
+      "Y_divisible": true,
+      "Z_divisible": true
+    },
+    "n_patches": 192,
+    "patch_dim": 576
+  },
+  "train_val_split": {
+    "passed": true,
+    "checks": {
+      "enough_train": true,
+      "enough_val": true,
+      "reasonable_split": true
+    },
+    "n_total": 1040,
+    "n_train": 884,
+    "n_val": 156,
+    "train_ratio": 0.85
+  },
+  "model_capacity": {
+    "passed": true,
+    "checks": {
+      "ratio_acceptable": true,
+      "not_too_small": true
+    },
+    "recommendations": [
+      "Model may be too large. Consider reducing embed_dim from 256 to 128"
+    ],
+    "estimated_params": 2580480,
+    "n_samples": 1040,
+    "params_per_sample": 2481.230769230769
+  }
+}
